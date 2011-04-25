@@ -33,6 +33,10 @@ function onError(error) {
     setAudioPosition("0");
 }
 
+function myPlayAudio(src) {
+    window.location.href = src;
+}
+
 function playAudio(src) {
 
     if (my_media === null) {
@@ -113,6 +117,8 @@ $(document).ready(function() {
         
         // local (on device): copy file to project's /assets folder:
         var src = '/android_asset/the-compassionate-father.mp3';
+        
+        //var src = 'http://www.dsmedia.org/sites/default/files/videos/The-future-is-Open_480p.mp4';
         
         playAudio(src);
     });
