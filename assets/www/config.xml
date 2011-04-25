@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns		= "http://www.w3.org/ns/widgets"
+	xmlns:gap	= "http://phonegap.com/ns/1.0"
+	id		= "org.door43.en.stories.compassionate"
+	version 	= "0.1.1">
+
+	<name>The Compassionate Father</name>
+
+	<description>
+		A story of Jesus from http://door43.org
+	</description>
+
+	<author href="http://door43.org"
+		email="info@door43.org">
+		Door43
+	</author>
+
+	<gap:platforms>
+		<gap:platform name="android" minVersion="2.2" />
+		<gap:platform name="webos" />
+		<gap:platform name="symbian.wrt" />
+		<gap:platform name="blackberry" project="widgets"/>
+	</gap:platforms>
+
+	<icon src="icon.png" gap:role="default" />
+
+	<feature name="http://api.phonegap.com/1.0/network"/>
+
+	<!-- sample preference specification -->
+	<!-- <preference name="autorotate" value="false" readonly="true"/> -->
+</widget>
