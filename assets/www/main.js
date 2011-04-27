@@ -111,23 +111,23 @@ function stopAudio() {
 
 $(document).ready(function() {
 
-    $("#playaudio").live('tap', function() {
+    $("#playaudio").live('tap click', function() {
         // Note: two ways to access media file: web and local file        
         //var src = 'http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3';
         
         // local (on device): copy file to project's /assets folder:
         var src = '/android_asset/the-compassionate-father.mp3';
         
-        //var src = 'http://www.dsmedia.org/sites/default/files/videos/The-future-is-Open_480p.mp4';
+        //var src = 'http://door43.org/media/the-compassionate-father.mp3';
         
         playAudio(src);
     });
 
-    $("#pauseaudio").live('tap', function() {
+    $("#pauseaudio").live('tap click', function() {
         pauseAudio();
     });
     
-    $("#stopaudio").live('tap', function() {
+    $("#stopaudio").live('tap click', function() {
         stopAudio();
     });
 });
